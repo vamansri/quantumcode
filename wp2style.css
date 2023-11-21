@@ -1,0 +1,136 @@
+
+.navbar {
+    background-color: transparent; 
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+  }
+  
+
+  .navbar-brand {
+    color: #ffffff;
+  }
+  
+
+  .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  
+
+  .dropdown-menu {
+    background-color: #3498db;
+  }
+  
+
+  .dropdown-item {
+    color: #ffffff; 
+  }
+  
+
+  .navbar-nav .nav-item.active .nav-link,
+  .navbar-nav .nav-item.show .nav-link {
+    background-color: #2c3e50;
+  }
+  
+
+  .navbar-text {
+    color: #ffffff;
+  }
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: #eff0f5;
+} */
+
+/* h2 {
+    color: #1f1c1c;
+    font-size: 2rem;
+    font-weight: 600;
+} */
+
+h2 span {
+    color: #BD53ED;
+    position: relative;
+}
+
+h2 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #BD53ED;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+h2 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+.icon-gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    overflow: hidden;
+  }
+  
+  .icon-image {
+    margin: 1px; 
+    border: 2px solid #333;
+    border-color: transparent;
+    cursor: pointer;
+}
+  
+  .icon-image:hover {
+    transform: scale(1.1); 
+  }
+
+  .cardcontent{
+    overflow-x: hidden;
+    background-color: #0099ff;
+  }
+
+  
+  .in-content {
+    padding: 45px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/543/668/original/white-abstract-background-vector-gray-abstract-modern-design-background-for-report-and-project'); /* Replace with the actual path to your image */
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+  
+  .in-content-1 {
+    padding: 20px;
+  }
+
+  .wave-svg {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .wave-path {
+    fill: #0099ff; 
+    fill-opacity: 1; 
+  }
+  
+
+
+    
